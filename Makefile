@@ -19,8 +19,8 @@ SRC = orderbook.cpp \
 
 OBJ = $(addsuffix .o, $(basename $(SRC)))
 
-orderBook : $(OBJ)
+orderbook : $(OBJ)
 		$(CXX) $(CXXFLAGS) -o $@ $(OBJ)
 
 clean:
-	rm -f $(OBJ) orderBook
+	rm -f $(OBJ) orderbook
